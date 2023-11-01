@@ -12,9 +12,15 @@ namespace dtp7_contact_list
             public string persname, surname, birthdate;
             public List<string> phone;
             public List<string> address;
-            public Person() { }
+            public Person()
+            {
+                this.phone = new List<string>();
+                this.address = new List<string>();
+            }
             public Person(string persname, string surname)
             {
+                this.phone = new List<string>();
+                this.address = new List<string>();
                 this.persname = persname; this.surname = surname;
             }
             public void AddPhone(string phone)
